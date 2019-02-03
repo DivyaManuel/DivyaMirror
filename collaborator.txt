@@ -1,0 +1,16 @@
+collaborator is a set up where another developer can push files or make any changes in our repository as we give them the access or it through an invitation sent through settings .
+
+
+
+
+line for stash 
+
+
+line for soft 
+
+
+
+line for hard 
+
+
+linrfor mixer
