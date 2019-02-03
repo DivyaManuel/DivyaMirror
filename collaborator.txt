@@ -3,7 +3,7 @@ collaborator is a set up where another developer can push files or make any chan
 
 
 
-line for stash 
+
 
 
 line for soft 
