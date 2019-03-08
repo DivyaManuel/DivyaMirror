@@ -1,0 +1,57 @@
+ docker pull ubuntu
+   51  mkdir dockervolume
+   52  cd dockervolume/
+   53  touch file.txt
+   54  docker run -it -d --name vol1 -v /root/dockervolume:/opt ubuntu bash
+   55  docker ps
+   56  docker exec -it fa1ba6c47b09 bash
+   57  docker volume ls
+   58  docker rm fa1ba6c47b09
+   59  docker rm -f fa1ba6c47b09
+   60  rm -f file.txt
+   61  docker run -it -d --name vol2  ubuntu bash
+   62  docker ps
+   63  docker exec -it a7b27e5a57f1 bash
+   64  docker run -it -d --name vol3 -v myvol  ubuntu bash
+   65  docker exec -it 10cae37431072ca12e68e1087c2c3161d054a920ad74eda9f1eca86eba39caa8 bash
+   66  docker rm -f 10cae37431072ca12e68e1087c2c3161d054a920ad74eda9f1eca86eba39caa8
+   67  docker run -it -d --name vol4 -v myvol:/opt  ubuntu bash
+   68  docker exec -it 99a1de373e7f0c3dc8970252d6b451c7ea359d77d7eb7cc4e66608ec7c305b45
+   69  docker exec -it 99a1de373e7f0c3dc8970252d6b451c7ea359d77d7eb7cc4e66608ec7c305b45 bash
+   70  cd /var
+   71  cd lib/
+   72  ls
+   73  cd docker/
+   74  ls
+   75  cd volumes/
+   76  ls
+   77  cd myvol/
+   78  ls
+   79  cd _data/
+   80  ls
+   81  cd jjjj/
+   82  ls
+   83  docker run -it -d --name vol4 -v myvol:/opt -v myvol:/root  ubuntu bash
+   84  docker run -it -d --name vol5 -v myvol:/opt -v myvol:/root  ubuntu bash
+   85  docker exec -it 5cbb8b49c0f16dd12bc8bb0418cf2ef1d5a3da1015d681ca532aa670eefec781 bash
+   86  cd ..
+   87  ld
+   88  ls
+   89  cd ..
+   90  ls
+   91  cd _data/
+   92  ls
+   93  docker run -it -d --name vol6 -v  -v myvol:/root  ubuntu bash
+   94  docker run -it -d --name vol6   -v myvol:/root  ubuntu bash
+   95  docker exec -it e22a276d9e9e11ff380681d3225f50047fafbffb848085000652ce7fedfafa07 bash
+   96  ls
+   97  cd ..
+   98  cd _data/
+   99  ls
+  100  cd ..
+  101  ls
+  102  cd myvol
+  103  cd _data/
+  104  ls
+  105  cd jjjj/
+  106  ls
